@@ -1,0 +1,41 @@
+.section-catalogue {
+  background: linear-gradient(white, lightgray, lightgray);
+}
+.catalogue {
+  display: flex;
+  gap: 20px;
+}
+.tool-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  background-color: $color-secondary-text;
+  border-radius: 12px;
+  padding: 10px 20px 10px 10px;
+  width: 590px;
+  &__img {
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+  }
+  &__medium {
+    width: 300px;
+  }
+  &__title {
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(131, 126, 126);
+    font-family: 'Roboto', sans-serif;
+  }
+  &__last {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: end;
+  }
+}

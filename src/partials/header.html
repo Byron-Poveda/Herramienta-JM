@@ -1,0 +1,178 @@
+<header class="header">
+  <div class="header__container container">
+    <div class="header__wrap">
+      <a href="#" class="header__img-link"
+        ><img
+          src="./images/LogoHeader.png"
+          alt="Logo-JM"
+          class="header__img logo-JM" />
+        <img
+          src="./images/LogoHeaderHover.png"
+          alt="Logo-JM"
+          class="header__img hide-img logo-JM-hover"
+      /></a>
+      <ul class="header__list">
+        <li class="header__item header__item--search">
+          <input
+            class="header__input-search"
+            type="text"
+            name="search"
+            placeholder="¿Que deseas buscar?"
+          />
+          <a
+            aria-label="noopener"
+            href="#"
+            rel="noopener noreferrer"
+            class="header__link-i"
+            ><i class="header__i-search ri-search-line ri-xl"></i>
+          </a>
+        </li>
+        <li class="header__item">
+          <button
+            class="header__menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <i class="header__menu-toggle ri-menu-line ri-xl"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <nav class="nav">
+      <ul class="nav__wrap">
+        <li class="nav__item">
+          <a class="nav__link pointer" ref="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link pointer" ref="#">Catalogo</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link pointer" ref="#">Acerca De</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link pointer" ref="#" id="dropdown-info-menu"
+            >Informacion
+            <button class="nav__info-arrow">
+              <i class="nav__arrow-i ri-arrow-down-s-line ri-xl"></i></button
+          ></a>
+          <ul class="nav-content hide nav-content--dropdown">
+            <li class="nav-content__item">
+              <a
+                href="email: byronpoveda2020@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-content__link"
+                ><span><i class="nav-content__i ri-mail-line ri-xl"></i></span
+                >byronpoveda2020@gmail.com</a
+              >
+            </li>
+            <li class="nav-content__item">
+              <a
+                href="tel: +57 3053657550"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-content__link"
+                ><span><i class="nav-content__i ri-phone-fill ri-xl"></i></span
+                >305 365 7550</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-box">
+      <ul class="header-box__list">
+        <li class="header-box__item header-box__item--search">
+          <input
+            class="header-box__input-search"
+            type="text"
+            name="search"
+            placeholder="¿Que deseas buscar?"
+          />
+          <a
+            aria-label="noopener"
+            href="#"
+            rel="noopener noreferrer"
+            class="header-box__link-i header-box__link-i--search"
+            ><i
+              class="header-box__i header-box__i--search ri-search-line ri-2x"
+            ></i>
+          </a>
+        </li>
+        <li class="header-box__item">
+          <a
+            aria-label="noopener"
+            href="#"
+            rel="noopener noreferrer"
+            class="header-box__link-i"
+            ><i class="header-box__i ri-account-circle-line ri-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu js-menu-container">
+  <div class="mobile-menu__wrap-close">
+    <button class="mobile-menu__close js-close-menu">
+      <i class="ri-close-line ri-xl"></i>
+    </button>
+  </div>
+  <div class="mobile-account-box">
+    <a
+      aria-label="noopener"
+      href="#"
+      rel="noopener noreferrer"
+      class="mobile-account-box__link-i"
+      ><i class="mobile-account-box__i ri-account-circle-line ri-xl"></i>
+    </a>
+  </div>
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__wrap">
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link pointer" ref="#">Home</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link pointer" ref="#">Catalogo</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link pointer" ref="#">Acerca De</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a
+          class="mobile-nav__link pointer"
+          ref="#"
+          id="mobile-dropdown-info-menu"
+          >Informacion<button class="mobile-nav__info-arrow">
+            <i
+              class="mobile-nav__arror-i ri-arrow-down-s-line ri-xl"
+            ></i></button
+        ></a>
+        <ul class="mobile-nav-content hide mobile-nav-content--dropdown">
+          <li class="mobile-nav-content__item">
+            <a
+              href="email: byronpoveda2020@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mobile-nav-content__link"
+              ><span
+                ><i class="mobile-nav-content__i ri-mail-line ri-xl"></i></span
+              >byronpoveda2020 @gmail.com</a
+            >
+          </li>
+          <li class="mobile-nav-content__item">
+            <a
+              href="tel: +57 3053657550"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mobile-nav-content__link"
+              ><span
+                ><i class="mobile-nav-content__i ri-phone-fill ri-xl"></i></span
+              >305 365 7550</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

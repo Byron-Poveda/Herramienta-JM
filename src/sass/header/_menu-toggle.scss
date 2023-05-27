@@ -1,0 +1,110 @@
+.mobile-menu {
+  width: 70vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: $color-secondary-text;
+  transition: transform 0.25s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(120%);
+  box-shadow: 0 0 8px $title-color-primary;
+  &__wrap-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 22px;
+  }
+  &__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    fill: $title-color-primary;
+  }
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.mobile-nav {
+  &__link {
+    color: $title-color-primary;
+    font-weight: 600;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: $transition;
+    &:hover {
+      background-color: $firs-color-ligthen;
+    }
+  }
+  &__info-arrow {
+    transition: $transition;
+  }
+}
+.mobile-nav-content {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: all 0.25s ease-in-out;
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    color: $title-color-primary;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: $transition;
+    gap: 8px;
+    border: 1px solid $firs-color-ligthen;
+    &:hover {
+      background-color: $firs-color-ligthen;
+      & i {
+        color: $color-secondary;
+        transform: $transition;
+      }
+    }
+  }
+}
+.mobile-account-box {
+  padding: 20px;
+  transition: $transition;
+  &:hover {
+    background-color: $firs-color-ligthen;
+    & .mobile-account-box__i {
+      color: $color-secondary;
+      transition: $transition;
+    }
+  }
+}
+@media screen and (min-width: 261px) {
+  .mobile-menu {
+    width: 55vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    transform: translate(120%) !important;
+  }
+}
+@media screen and (min-width: 350px) {
+  .mobile-menu {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .mobile-menu {
+    width: 35vw;
+  }
+}

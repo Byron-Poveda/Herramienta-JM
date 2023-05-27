@@ -1,0 +1,79 @@
+.hero-carousel {
+  background-color: transparent;
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.carousels {
+  // width = 100% * numero de imagenes del carrusel
+  width: 500%;
+  height: 100%;
+  display: flex;
+  &__section {
+    //dividido por la cantidad de imagenes del carrusel
+    width: calc(100% / 5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  &__btn {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+    z-index: 2;
+    &:hover {
+      background-color: rgba(218, 219, 219, 0.432);
+    }
+  }
+  &__btn--left {
+    left: 10px;
+  }
+  &__btn--right {
+    right: 10px;
+  }
+  &__i {
+    color: $title-color-primary;
+  }
+  &__img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero-carousel {
+    height: 450px;
+  }
+  .carousels__img {
+    width: 400px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-carousel {
+    height: 500px;
+  }
+  .carousels__img {
+    width: 500px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousels__img {
+    width: 600px;
+    height: auto;
+  }
+}
