@@ -3,6 +3,7 @@
 }
 .catalogue {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .tool-container {
@@ -10,10 +11,14 @@
   flex-direction: row;
   gap: 15px;
   align-items: center;
-  background-color: $color-secondary-text;
+  background-color: #fff;
   border-radius: 12px;
   padding: 10px 20px 10px 10px;
   width: 590px;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.05);
+  }
   &__img {
     width: 170px;
     height: 170px;
@@ -35,7 +40,36 @@
   &__last {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     text-align: end;
+    width: 164px;
+  }
+  &__information {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    & b {
+      color: $title-color-primary;
+      transition: $transition;
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+  &__price {
+    color: green;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+  }
+  &__negotiable {
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__svg {
+    margin-right: 5px;
+    font-size: 1.1rem;
   }
 }

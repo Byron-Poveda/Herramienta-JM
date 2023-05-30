@@ -51,6 +51,24 @@
     width: 200px;
     height: auto;
   }
+  &-wrap {
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    gap: 4px;
+    &__circle {
+      z-index: 3;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: rgb(197, 190, 190);
+    }
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -72,6 +90,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero-carousel {
+    height: 560px;
+  }
   .carousels__img {
     width: 600px;
     height: auto;
