@@ -52,10 +52,10 @@ toolContainers.forEach(element => {
           <div class="card-container__last">
             <p class="card-container__last-title">Medios de pago:</p>
             <div class="card-container__wrap-images">
-              <img width="45" height="auto" src="/bancolombia.598da627.png" alt="Bancolombia">
-              <img width="30" height="auto" src="/nequi.4227ac43.png" alt="Nequi">
-              <img width="55" height="auto" src="/efectivo.d736bec9.jfif" alt="Efectivo">
-              <img width="40" height="auto" src="/davivienda.faf2d098.jpg" alt="Davivienda">
+              <img width="45" height="auto" src="./images/catalogue/metodos-de-pago/bancolombia.png" alt="Bancolombia">
+              <img width="30" height="auto" src="./images/catalogue/metodos-de-pago/nequi.png" alt="Nequi">
+              <img width="55" height="auto" src="./images/catalogue/metodos-de-pago/efectivo.jfif" alt="Efectivo">
+              <img width="40" height="auto" src="./images/catalogue/metodos-de-pago/davivienda.jpg" alt="Davivienda">
             </div>
             <span class="card-container__price">${
               arrayTools[arrayCard.indexOf(element)].price
