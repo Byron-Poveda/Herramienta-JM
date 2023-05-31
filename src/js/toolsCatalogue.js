@@ -1,9 +1,14 @@
 import * as basicLightbox from '../basiclihtbox/basicLightbox.min.js';
 import '../basiclihtbox/basicLightbox.min.css';
 const basicLightbox = require('../basiclihtbox/basicLightbox.min.js');
-const toolContainers = document.querySelectorAll('.tool-container');
+const toolContainers = document.querySelectorAll('.tool-container'),
+  imgsCardsCatalogue = document.querySelectorAll('.img-card-catalogue');
 let arrayTools = [],
-  arrayCard = [];
+  arrayCard = [],
+  arrayImgsCard = [];
+imgsCardsCatalogue.forEach(element => {
+  arrayImgsCard.push(element);
+});
 toolContainers.forEach(element => {
   //   console.log(element.querySelector('.tool-container__img').src);
   const objectToolsCharacteristics = {
@@ -52,10 +57,18 @@ toolContainers.forEach(element => {
           <div class="card-container__last">
             <p class="card-container__last-title">Medios de pago:</p>
             <div class="card-container__wrap-images">
-              <img width="45" height="auto" src="src/images/catalogue/metodos-de-pago/bancolombia.png" alt="Bancolombia">
-              <img width="30" height="auto" src="src/images/catalogue/metodos-de-pago/nequi.png" alt="Nequi">
-              <img width="55" height="auto" src="src/images/catalogue/metodos-de-pago/efectivo.jfif" alt="Efectivo">
-              <img width="40" height="auto" src="src/images/catalogue/metodos-de-pago/davivienda.jpg" alt="Davivienda">
+              <img width="45" height="auto" src="${
+                arrayImgsCard[0].src
+              }" alt="Bancolombia">
+              <img width="30" height="auto" src="${
+                arrayImgsCard[1].src
+              }" alt="Nequi">
+              <img width="55" height="auto" src="${
+                arrayImgsCard[2].src
+              }" alt="Efectivo">
+              <img width="40" height="auto" src="${
+                arrayImgsCard[3].src
+              }" alt="Davivienda">
             </div>
             <span class="card-container__price">${
               arrayTools[arrayCard.indexOf(element)].price
