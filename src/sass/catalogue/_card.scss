@@ -124,8 +124,11 @@
       opacity: 0.4;
       transition: all 0.3s ease-in-out;
     }
-    &:hover::before {
-      left: 100%;
+    &:hover {
+      box-shadow: 0 0 10px rgba(96, 241, 12, 0.8);
+      &::before {
+        left: 100%;
+      }
     }
     & span {
       color: $color-primary-text;
