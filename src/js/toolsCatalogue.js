@@ -1,5 +1,6 @@
-import * as basicLightbox from 'basiclightbox';
-const basicLightbox = require('basiclightbox');
+import * as basicLightbox from '../basiclihtbox/basicLightbox.min.js';
+import '../basiclihtbox/basicLightbox.min.css';
+const basicLightbox = require('../basiclihtbox/basicLightbox.min.js');
 const toolContainers = document.querySelectorAll('.tool-container');
 let arrayTools = [],
   arrayCard = [];
